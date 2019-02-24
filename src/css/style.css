@@ -1,0 +1,94 @@
+body {
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 1170px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+    width: 95%;
+  }
+}
+
+.button {
+  padding: 18px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffd200;
+}
+
+.navbar {
+  padding: 7px 8px;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
