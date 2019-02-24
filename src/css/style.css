@@ -24,6 +24,13 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 550px;
+    width: 95%;
+  }
+}
+
 .button {
   padding: 18px 30px;
   border-radius: 10px;
@@ -74,12 +81,23 @@ img {
 .navbar__phone {
   display: inline-block;
   margin-top: 10px;
+  text-decoration: none;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 @media (max-width: 768px) {
+  .navbar__button {
+    font-size: 15px;
+    padding: 20px 28px;
+  }
+  .navbar__logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 567px) {
   .navbar__contacts {
     display: none;
   }
