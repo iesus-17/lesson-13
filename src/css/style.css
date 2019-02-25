@@ -44,6 +44,12 @@ img {
   border: 2px solid #ffd200;
 }
 
+@media (max-width: 320px) {
+  .button {
+    border-radius: 5px;
+  }
+}
+
 .navbar {
   padding: 7px 8px;
 }
@@ -113,6 +119,19 @@ img {
   }
   .navbar__button {
     padding: 15px 26px;
+  }
+  .navbar__logogit {
+    width: 90px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 15px;
   }
   .navbar__logogit {
     width: 90px;
