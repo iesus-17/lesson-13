@@ -13,7 +13,7 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    width: 750px;
   }
 }
 
@@ -44,7 +44,7 @@ img {
   border: 2px solid #ffd200;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .button {
     border-radius: 5px;
   }
@@ -118,6 +118,7 @@ img {
     display: none;
   }
   .navbar__button {
+    font-size: 12px;
     padding: 15px 26px;
   }
   .navbar__logogit {
@@ -125,7 +126,7 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .navbar__contacts {
     display: none;
   }
@@ -140,28 +141,28 @@ img {
 
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 135px;
 }
 
 .hero-text__title {
@@ -219,6 +220,11 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+}
+
+.hero-img img {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {
