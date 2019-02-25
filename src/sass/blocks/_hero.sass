@@ -1,0 +1,82 @@
+.hero
+  padding: 50px 0
+  &-block
+    display: flex
+    align-items: center
+  &-text
+    display: flex
+    flex-basis: 45%
+    flex-direction: column
+    padding-right: 135px
+    &__title
+      margin-bottom: 37px
+      color: $text-color
+      font-size: 41px
+      font-weight: 700
+      line-height: 55px
+    &__subtitle
+      font-size: 20px
+      font-weight: 700
+      margin-bottom: 70px
+  &-list
+    margin: 0
+    padding: 0
+    img
+      max-width: max-content
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+      margin-left: 1px
+    &__img
+      width: 38px
+      height: 38px
+      border: 2px solid $main-color
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      margin-right: 30px
+    &__text
+      max-width: 300px
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+    &-list 
+      margin-bottom: 40px
+    &-text
+      padding-right: 0
+@media (max-width: 768px)
+  .hero
+    &-text
+      &__title
+        font-size: 26px
+        line-height: 1.4
+        margin-bottom: 13px
+      &__subtitle
+        font-size: 18px
+    &-list
+      &__text
+        //  max-width: 200px
+         font-size: 14px
+@media (max-width: 425px)
+  .hero
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 13px
+      &__subtitle
+        margin-bottom: 50px
+        font-size: 16px
+    &-list
+      margin-bottom: 20px
+      &__img
+        margin-right: 15px
+      &__text
+         max-width: 200px
+         font-size: 12px
+
+
+
