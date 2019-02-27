@@ -4,27 +4,32 @@
     display: flex
     justify-content: space-between
     align-items: center
+  &__contacts
+    margin-top: 4px
   &__info
     display: flex
-    align-items: center
+    align-items: top
     text-align: right
   &__address
     display: flex
     flex-direction: column
     font-size: 13px
-    font-weight: 400
+    +reg
   &__button
     margin-left: 30px
-    padding: 18px 30px 17px 30px
+    padding: 17px 29px 18px 29px
+    // border: 1px solid $main-color
     font-size: 13px
-    font-weight: 600
+    +bold
+    
   &__phone
     display: inline-block
     margin-top: 6px
     text-decoration: none
     color: $text-color
     font-size: 20px
-    font-weight: 700  
+    // font-weight: 700  
+    +bold
 
 @media (max-width: 768px)
   .navbar

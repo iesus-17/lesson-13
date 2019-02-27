@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -40,7 +57,7 @@ img {
 
 .button:hover {
   background-color: #ffffff;
-  padding: 17px 29px;
+  padding: 16px 28px 17px 28px;
   border: 2px solid #ffd200;
 }
 
@@ -66,13 +83,17 @@ img {
           align-items: center;
 }
 
+.navbar__contacts {
+  margin-top: 4px;
+}
+
 .navbar__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   text-align: right;
 }
 
@@ -85,14 +106,16 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 13px;
-  font-weight: 400;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 .navbar__button {
   margin-left: 30px;
-  padding: 18px 30px 17px 30px;
+  padding: 17px 29px 18px 29px;
   font-size: 13px;
-  font-weight: 600;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
@@ -101,6 +124,7 @@ img {
   text-decoration: none;
   color: #333333;
   font-size: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -169,8 +193,9 @@ img {
   margin-bottom: 37px;
   color: #333333;
   font-size: 41px;
-  font-weight: 700;
   line-height: 55px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
