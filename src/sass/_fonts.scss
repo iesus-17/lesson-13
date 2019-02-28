@@ -44,9 +44,11 @@
 @mixin reg {
   font-family: 'MuseoSansCyrl-300', sans-serif;
   font-weight: 300;
+  color: $text-color
 }
 
 @mixin bold {
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
+  color: $text-color
 }
