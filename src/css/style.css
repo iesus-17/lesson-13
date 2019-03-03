@@ -618,4 +618,26 @@ img {
   margin-top: 10px;
   margin-right: 10px;
 }
+
+.back-to-top {
+  font-size: 50px;
+  color: #7272709a;
+  position: fixed;
+  bottom: 5%;
+  right: auto;
+  left: auto;
+  width: inherit;
+  text-align: end;
+  z-index: 1;
+  display: none;
+}
+
+.back-to-top_active {
+  display: inline-block;
+}
+
+.back-to-top_focus {
+  font-size: 45px;
+  color: #ffd2007a;
+}
 /*# sourceMappingURL=style.css.map */
