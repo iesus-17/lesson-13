@@ -378,9 +378,13 @@ img {
   }
 }
 
+.offer.section {
+  padding-top: 78px;
+}
+
 .offer {
   background: url("../img/offer/offer__bg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center right;
   position: relative;
 }
@@ -397,6 +401,8 @@ img {
 
 .offer-block {
   position: relative;
+  padding-top: 0;
+  height: 100%;
   max-width: 50%;
   padding-right: 90px;
 }
@@ -406,7 +412,7 @@ img {
   font-weight: 700;
   color: #333333;
   max-width: 360px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .offer__subtitle {
@@ -415,6 +421,7 @@ img {
   color: #333333;
   max-width: 250px;
   margin-bottom: 30px;
+  line-height: 1.2;
 }
 
 .offer__input {
@@ -429,11 +436,11 @@ img {
 .offer__button {
   width: 100%;
   font-size: 16px;
-  padding: 27px;
+  padding: 25px;
 }
 
 .offer-description {
-  padding-top: 30px;
+  padding-top: 25px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
