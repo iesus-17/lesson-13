@@ -8,6 +8,9 @@
     crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+
   <link rel="stylesheet" href="css/style.css" />
   <title>Ремонт квартир</title>
 </head>
@@ -120,6 +123,40 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">
+          Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+        </h2>
+        <div class="slider">
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-1.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-1.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+
+        </div>
+        <!-- /.slider -->
+        <div class="arrow portfolio__arrow">
+          <div class="arrow__left">
+            <img src="img/portfolio/left.png" alt="To left">
+          </div>
+          <div class="arrow__right">
+            <img src="img/portfolio/right.png" alt="To right">
+
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
   </main>
   <!-- /.main -->
 
@@ -133,7 +170,9 @@
   <!-- /.modal -->
   <div class="top-btn">
     <div class="container">
-      <i class="back-to-top fas fa-angle-double-up " id="backToTop"></i>
+      <div class="top-btn-wrap">
+        <i class="top-btn__back-to-top fas fa-angle-double-up " id="backToTop"></i>
+      </div>
     </div>
   </div>
 
@@ -143,6 +182,34 @@
     crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/back-to-top.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        infinity: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 600,
+        prevArrow: $('.arrow__left'),
+        nextArrow: $('.arrow__right'),
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 
 </body>
 

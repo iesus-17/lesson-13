@@ -64,6 +64,7 @@ img {
   border-radius: 10px;
   border: 1px solid #ffd200;
   background-color: #ffd200;
+  outline: none;
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
   color: #333333;
@@ -94,6 +95,7 @@ img {
   color: #333333;
   font-size: 24px;
   line-height: 35px;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -115,6 +117,10 @@ img {
 .input:focus {
   border: 1px solid #ffd200;
   outline: none;
+}
+
+.arrow__left, .arrow__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -411,6 +417,7 @@ img {
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
   color: #333333;
+  text-align: left;
   max-width: 360px;
   margin-bottom: 18px;
 }
@@ -585,6 +592,44 @@ img {
   }
 }
 
+.portfolio.section {
+  padding: 100px 0;
+  background: #f5f5f5 url(../img/portfolio/portfolio-pattern.jpg) repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio.section img {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrow {
+  max-width: 120px;
+  padding-top: 70px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__img {
+  margin: auto;
+}
+
+.slider__item {
+  outline: none;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -619,25 +664,41 @@ img {
   margin-right: 10px;
 }
 
-.back-to-top {
+.top-btn-wrap {
   font-size: 50px;
-  color: #7272709a;
   position: fixed;
   bottom: 5%;
   right: auto;
   left: auto;
   width: inherit;
   text-align: end;
+}
+
+.top-btn__back-to-top {
+  color: #7272709a;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
   z-index: 1;
   display: none;
 }
 
-.back-to-top_active {
+.top-btn__back-to-top:hover {
+  cursor: pointer;
+  font-size: 45px;
+  color: #ffd2007a;
+  border: 2px solid #ffd200;
+  border-radius: 50px;
+}
+
+.top-btn__back-to-top_active {
   display: inline-block;
 }
 
-.back-to-top_focus {
+.top-btn__back-to-top_focus {
   font-size: 45px;
   color: #ffd2007a;
+  border: 1px solid #ffd200;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */

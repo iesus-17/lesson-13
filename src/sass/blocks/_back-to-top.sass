@@ -7,21 +7,42 @@
 //   position: fixed
 //   left: auto
 //   right: auto
-.back-to-top
-  font-size: 50px
-  color: #7272709a
-  // color: 
-  position: fixed
-  bottom: 5%
-  right: auto
-  left: auto
-  width: inherit
-  text-align: end
-  z-index: 1
-  display: none
-  &_active
-    display: inline-block
-  &_focus
-    font-size: 45px
-    color: #ffd2007a
-  
+.top-btn
+  &-wrap
+    font-size: 50px
+    // border: 5px solid red
+    position: fixed
+    bottom: 5%
+    right: auto
+    left: auto
+    width: inherit
+    text-align: end
+  &__back-to-top
+    
+    color: #7272709a
+    // color: 
+    // position: fixed
+    // bottom: 5%
+    // right: auto
+    // left: auto
+    // width: inherit
+    // text-align: end
+    width: 50px
+    text-align: center
+    text-decoration: none
+    z-index: 1
+    display: none
+    &:hover
+      cursor: pointer
+      font-size: 45px
+      color: #ffd2007a
+      border: 2px solid $main-color
+      border-radius: 50px
+    &_active
+      display: inline-block
+    &_focus
+      font-size: 45px
+      color: #ffd2007a
+      border: 1px solid $main-color
+      border-radius: 50px
+    
