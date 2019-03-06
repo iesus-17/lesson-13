@@ -1,5 +1,5 @@
 .hero
-  padding: 50px 0
+  padding: 50px 0 48px 0
   background-color: $background-color
   &-block
     display: flex
@@ -23,25 +23,28 @@
     &__subtitle
       font-size: 20px
       +bold
-      margin-bottom: 70px
+      margin-bottom: 69px
   &-list
     margin: 0
     padding: 0
+    // border: 5px solid red
+    max-width: 315px
     img
-      max-width: max-content
+      max-width: min-content
+
     &__item
       display: flex
       align-items: center
       margin-bottom: 26px
       &:nth-child(2)
-        margin-bottom: 27px
+        margin-bottom: 22px
       &:last-child
         margin-bottom: 0
 
       // margin-left: 1px
     &__img
-      width: 36px
-      height: 36px
+      width: 40px
+      height: 40px
       border: 2px solid $main-color
       display: flex
       align-items: center
@@ -50,8 +53,8 @@
       margin-right: 30px
     &__text
       +reg
-      max-height: 40px
-      max-width: 235px
+      // max-height: 40px
+      max-width: 245px
       font-size: 14px
       line-height: 24px
 
@@ -59,6 +62,7 @@
   &-img
     //Влад, не бей, плез)) Во всем виноват косячный макет
     // padding-top: 50px
+    margin-top: -2px
     img
       box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 @media (max-width: 1200px)

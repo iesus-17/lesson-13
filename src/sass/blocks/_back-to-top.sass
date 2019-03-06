@@ -17,6 +17,7 @@
     left: auto
     width: inherit
     text-align: end
+    // z-index: -1
   &__back-to-top
     
     color: #7272709a
@@ -34,14 +35,20 @@
     display: none
     &:hover
       cursor: pointer
-      font-size: 45px
+      font-size: 40px
+      width: 40px
       color: #ffd2007a
       border: 2px solid $main-color
       border-radius: 50px
     &_active
+      font-size: 40px
+      width: 40px
+
       display: inline-block
     &_focus
-      font-size: 45px
+      font-size: 40px
+      width: 40px
+
       color: #ffd2007a
       border: 1px solid $main-color
       border-radius: 50px

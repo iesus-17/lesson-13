@@ -1,25 +1,49 @@
 .portfolio.section
-  padding: 100px 0
+  padding: 90px 0 100px 0 
   background: $background-color url(../img/portfolio/portfolio-pattern.jpg) repeat-y center left
   background-size: 50%
   img
     max-width: max-content
+    // width: 100%
 .portfolio
   &__title
-    max-width: 500px
+    max-width: 800px
     margin: auto
-    margin-bottom: 100px
+    margin-bottom: 93px
+    font-size: 30px
+    line-height: 45px
+    +bold
   &__arrow
     max-width: 120px
-    padding-top: 70px
+    padding-top: 68px
     margin: auto
     display: flex
     justify-content: space-between
 .slider
+  width: 100%
+  display: flex
+  justify-content: space-between
+  margin: 0
+  padding: 0
   &__img
     margin: auto
+    width: 100%
+    margin: 0
+    padding: 0
+    // margin-right: 30px
   &__item
     outline: none
-    
+    width: 100%
+    margin: 0
+    padding: 0
+    // margin-right: 30px
+
+    & .slick-active:last-of-type
+      border: 1px solid red
+      margin-right: -10px
+    // margin-left: 15px
+
+.slider .slick-active:last-child
+  border: 1px sold red    
 
     

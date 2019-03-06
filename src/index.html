@@ -126,7 +126,7 @@
     <section class="section portfolio">
       <div class="container">
         <h2 class="section-title portfolio__title">
-          Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+          Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах
         </h2>
         <div class="slider">
           <div class="slider__item"><img class="slider__img" src="img/portfolio/slide-1.png" alt=""></div>
@@ -186,10 +186,14 @@
   <script>
     $(document).ready(function () {
       $('.slider').slick({
-        infinity: true,
+        // infinity: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 600,
+        speed: 1000,
+        // centerMode: true,
+        // centerPadding: '10px',
+        // autoplay: true,
+        // autoplaySpeed: 3500,
         prevArrow: $('.arrow__left'),
         nextArrow: $('.arrow__right'),
         responsive: [{
@@ -208,7 +212,11 @@
           }
         ]
       });
+      // $('.slider').$('.slick-active[data-slick-index="2"]').css({"margin-right": '100px'});
+
+      // $('.slick-active').
     });
+
   </script>
 
 </body>

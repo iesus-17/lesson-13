@@ -140,7 +140,7 @@ img {
 }
 
 .navbar__contacts {
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .navbar__info {
@@ -168,8 +168,9 @@ img {
 }
 
 .navbar__button {
-  margin-left: 30px;
-  padding: 17px 29px 18px 29px;
+  margin-top: -2px;
+  margin-left: 29px;
+  padding: 16px 29px 17px 29px;
   font-size: 13px;
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
@@ -223,7 +224,7 @@ img {
 }
 
 .hero {
-  padding: 50px 0;
+  padding: 50px 0 48px 0;
   background-color: #f5f5f5;
 }
 
@@ -268,18 +269,19 @@ img {
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
   color: #333333;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .hero-list {
   margin: 0;
   padding: 0;
+  max-width: 315px;
 }
 
 .hero-list img {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .hero-list__item {
@@ -293,7 +295,7 @@ img {
 }
 
 .hero-list__item:nth-child(2) {
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 }
 
 .hero-list__item:last-child {
@@ -301,8 +303,8 @@ img {
 }
 
 .hero-list__img {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,10 +323,13 @@ img {
   font-family: 'MuseoSansCyrl-300', sans-serif;
   font-weight: 300;
   color: #333333;
-  max-height: 40px;
-  max-width: 235px;
+  max-width: 245px;
   font-size: 14px;
   line-height: 24px;
+}
+
+.hero-img {
+  margin-top: -2px;
 }
 
 .hero-img img {
@@ -390,7 +395,7 @@ img {
 
 .offer {
   background: url("../img/offer/offer__bg.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   position: relative;
 }
@@ -443,25 +448,19 @@ img {
 .offer__button {
   width: 100%;
   font-size: 16px;
-  padding: 25px;
+  padding: 24px 25px 26px 25px;
 }
 
 .offer-description {
   padding-top: 25px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .offer-description__timing {
+  width: 260px;
+  margin-right: 71px;
   font-size: 15px;
   max-width: 225px;
   line-height: 24px;
@@ -471,6 +470,7 @@ img {
 }
 
 .offer-description__phone {
+  margin-top: -1px;
   font-size: 15px;
   line-height: 24px;
   font-family: 'MuseoSansCyrl-300', sans-serif;
@@ -480,7 +480,8 @@ img {
 
 .offer-description__phone a {
   display: block;
-  padding-top: 5px;
+  padding-top: 1px;
+  margin-left: -2px;
   font-family: 'MuseoSansCyrl-700', sans-serif;
   font-weight: 700;
   color: #333333;
@@ -593,7 +594,7 @@ img {
 }
 
 .portfolio.section {
-  padding: 100px 0;
+  padding: 90px 0 100px 0;
   background: #f5f5f5 url(../img/portfolio/portfolio-pattern.jpg) repeat-y center left;
   background-size: 50%;
 }
@@ -605,14 +606,19 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 93px;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'MuseoSansCyrl-700', sans-serif;
+  font-weight: 700;
+  color: #333333;
 }
 
 .portfolio__arrow {
   max-width: 120px;
-  padding-top: 70px;
+  padding-top: 68px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,12 +628,39 @@ img {
           justify-content: space-between;
 }
 
+.slider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .slider__img {
   margin: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .slider__item {
   outline: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item .slick-active:last-of-type {
+  border: 1px solid red;
+  margin-right: -10px;
+}
+
+.slider .slick-active:last-child {
+  border: 1px sold red;
 }
 
 .modal {
@@ -685,18 +718,22 @@ img {
 
 .top-btn__back-to-top:hover {
   cursor: pointer;
-  font-size: 45px;
+  font-size: 40px;
+  width: 40px;
   color: #ffd2007a;
   border: 2px solid #ffd200;
   border-radius: 50px;
 }
 
 .top-btn__back-to-top_active {
+  font-size: 40px;
+  width: 40px;
   display: inline-block;
 }
 
 .top-btn__back-to-top_focus {
-  font-size: 45px;
+  font-size: 40px;
+  width: 40px;
   color: #ffd2007a;
   border: 1px solid #ffd200;
   border-radius: 50px;

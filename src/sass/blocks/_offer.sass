@@ -2,7 +2,7 @@
   padding-top: 78px
 .offer
   background: url('../img/offer/offer__bg.png') no-repeat
-  background-size: cover
+  background-size: contain
   background-position: center right
   position: relative
   // max-height: 595px
@@ -41,25 +41,30 @@
   &__button
     width: 100%
     font-size: 16px
-    padding: 25px
+    padding: 24px 25px 26px 25px
   &-description
     padding-top: 25px
-    width: 100%
+    // width: 100%
     display: flex
-    flex-direction: row
-    justify-content: space-between
+    // flex-direction: row
+    // justify-content: space-between
     &__timing
+      width: 260px
+      margin-right: 71px
       font-size: 15px
       max-width: 225px
       line-height: 24px
       +reg
     &__phone
+      // width: 50%
+      margin-top: -1px
       font-size: 15px
       line-height: 24px
       +reg
       a
         display: block
-        padding-top: 5px
+        padding-top: 1px
+        margin-left: -2px
         +bold
         text-decoration: none
 @media (max-width: 1200px)
