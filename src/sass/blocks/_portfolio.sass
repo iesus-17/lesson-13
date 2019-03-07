@@ -20,30 +20,21 @@
     display: flex
     justify-content: space-between
 .slider
-  width: 100%
-  display: flex
-  justify-content: space-between
+  width: 1200px
   margin: 0
+  margin-left: -15px
+  text-align: center
   padding: 0
   &__img
     margin: auto
     width: 100%
-    margin: 0
-    padding: 0
-    // margin-right: 30px
   &__item
     outline: none
     width: 100%
-    margin: 0
-    padding: 0
-    // margin-right: 30px
+@media (max-width: 1200px)
+  .slider
+    width: 100%
+    margin-left: 0
+    &__img
+      width: 90%
 
-    & .slick-active:last-of-type
-      border: 1px solid red
-      margin-right: -10px
-    // margin-left: 15px
-
-.slider .slick-active:last-child
-  border: 1px sold red    
-
-    
